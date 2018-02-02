@@ -1,0 +1,249 @@
+$font-quicksand: "Quicksand", sans-serif
+$font-opensans: "Open Sans", sans-serif
+$font-raleway: 'Raleway', sans-serif
+
+$orange: #fec601
+
+* 
+    margin: 0
+    padding: 0
+
+body
+    max-width: 1900px
+    margin: 0 auto
+    font-family: $font-quicksand
+
+header
+    width: 100%
+    height: 750px
+    margin: 0 auto
+    background-image: url(../pic/background1.jpg) 
+    background-size: cover
+    
+    .jumbotron
+        background: rgba(43, 46, 74, 0.95)
+        height: 100%
+        margin: 0
+        padding: 0            
+
+    .container
+        padding: 0px    
+
+    nav
+        line-height: 80px
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1)    
+        padding: 0
+        margin: 0
+
+        .logo
+            display: block       
+            float: left
+            padding: 10px 0
+            margin: 0
+
+            img
+                margin: 0
+                padding: 0        
+
+        .menu
+            display: block
+            float: right
+            text-transform: uppercase
+            padding: 0px
+
+            a
+                color: #ffffff        
+                &:hover
+                    color: #2b2e4a
+
+            li
+                text-align: right
+
+    .welcome        
+        display: block    
+        height: 650px
+        color: #ffffff
+        text-align: center
+        font-family: $font-raleway    
+
+        .container
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-content: center
+            align-items: center
+            height: 100%
+
+            h1
+                font-family: $font-opensans        
+                font-size: 65px
+                text-transform: uppercase        
+            h3
+                font-size: 22px           
+                line-height: 30px
+
+            button
+                background-color: #e84545
+                margin-top: 75px
+                width: 200px
+                height: 45px
+                font-size: 13px
+                text-transform: uppercase        
+
+                
+.icons
+    height: 690px
+    background-color: #ffffff
+    text-align: center
+    display: flex
+    justify-content: center
+    align-content: center
+    align-items: center
+    
+    .col-md-4
+        margin: 30px 0
+        padding: 0 45px
+        
+    i
+        color: red
+        font-size: 60px             
+        padding-bottom: 10px
+    
+    h3
+        font-size: 14px
+        font-weight: bold
+        text-transform: uppercase
+        font-family: $font-raleway 
+        padding-bottom: 10px
+    
+    p
+        font-size: 14px
+        line-height: 21px
+        font-family: $font-raleway
+        color: #6c7279
+                
+        
+.gallery
+    width: 100%
+    margin: 0
+    padding: 0
+    
+    .row
+        margin: 0        
+        
+        .gal-0            
+            padding: .6px  
+            border: 0
+            margin: 0
+            
+            img
+                width: 100%
+            
+            .img-thumbnail
+                padding: 0
+                border: 0
+                margin: 0
+            
+            .text-gal                
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-content: center
+                align-items: center
+                height: 100%
+                width: 100%
+                position: absolute
+                top: 0px
+                font-family: $font-raleway                
+                color: #ffffff
+                
+                h3 
+                    text-transform: uppercase
+                    font-weight: bold                    
+                    font-size: 14px
+                    display: none
+                    text-align: center
+                    z-index: 10
+                    
+                    
+                p
+                    display: none
+                    font-size: 14px
+                    text-align: center
+                    z-index: 10
+                &:hover
+                    background-color: rgba(133, 256, 255, 0.5)
+                    h3, p
+                        display: block
+
+                    
+.team
+    height: 780px
+    padding: 0
+    margin: 0 auto
+    background-color: #ffffff    
+    display: flex
+    justify-content: center
+    align-content: center
+    align-items: center       
+    font-family: $font-raleway 
+    
+    h3        
+        font-size: 22px
+        color: #2d3033
+    
+    h6
+        font-size: 13px
+        color: #e84545
+        text-transform: uppercase
+        
+    p
+        font-size: 14px
+        color: #6c7279
+        line-height: 21px
+        
+    i
+        width: 30px
+        height: 30px
+        font-size: 18px
+        color: #c6cacc
+        border: 1px solid #e8ecee
+        padding: 5px
+        text-align: center
+        
+        &:hover
+            color: $orange
+            border: 1px solid $orange
+        
+        
+.slider
+    display: block    
+    width: 100%
+    padding: 0
+    margin: 0 auto
+    
+    .col-md-6
+        padding: 0
+        margin: 0
+                
+    .item
+        width: 100%
+        height: 100%
+        padding: 0
+        margin: 0
+        
+    .example-1
+        background-color: red        
+        
+    .example-2
+        background-color: blue
+        
+    .example-3
+        background-color: violet
+    
+    .example-4
+        background-color: green
+        
+        
+.ready
+    display: block
