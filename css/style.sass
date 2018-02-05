@@ -3,6 +3,8 @@ $font-opensans: "Open Sans", sans-serif
 $font-raleway: 'Raleway', sans-serif
 
 $orange: #fec601
+$button-red: #e84545
+$slider: #3a3939
 
 * 
     margin: 0
@@ -12,11 +14,13 @@ body
     max-width: 1900px
     margin: 0 auto
     font-family: $font-quicksand
+    padding: 0
 
 header
     width: 100%
-    height: 750px
+    min-height: 750px
     margin: 0 auto
+    padding: 0
     background-image: url(../pic/background1.jpg) 
     background-size: cover
     
@@ -61,7 +65,7 @@ header
 
     .welcome        
         display: block    
-        height: 650px
+        min-height: 750px
         color: #ffffff
         text-align: center
         font-family: $font-raleway    
@@ -72,7 +76,7 @@ header
             justify-content: center
             align-content: center
             align-items: center
-            height: 100%
+            height: 80vh
 
             h1
                 font-family: $font-opensans        
@@ -83,7 +87,7 @@ header
                 line-height: 30px
 
             button
-                background-color: #e84545
+                background-color: $button-red
                 margin-top: 75px
                 width: 200px
                 height: 45px
@@ -92,30 +96,30 @@ header
 
                 
 .icons
-    height: 690px
+    min-height: 690px
     background-color: #ffffff
     text-align: center
     display: flex
     justify-content: center
     align-content: center
     align-items: center
-    
-    .col-md-4
-        margin: 30px 0
-        padding: 0 45px
         
+    .col-md-4
+        padding: 0 45px
+        margin: 0
+
     i
         color: red
         font-size: 60px             
         padding-bottom: 10px
-    
+
     h3
         font-size: 14px
         font-weight: bold
         text-transform: uppercase
         font-family: $font-raleway 
         padding-bottom: 10px
-    
+
     p
         font-size: 14px
         line-height: 21px
@@ -178,7 +182,7 @@ header
 
                     
 .team
-    height: 780px
+    min-height: 780px
     padding: 0
     margin: 0 auto
     background-color: #ffffff    
@@ -203,8 +207,8 @@ header
         line-height: 21px
         
     i
-        width: 30px
-        height: 30px
+        width: 35px
+        height: 35px
         font-size: 18px
         color: #c6cacc
         border: 1px solid #e8ecee
@@ -217,33 +221,154 @@ header
         
         
 .slider
-    display: block    
+    display: block
+    
     width: 100%
     padding: 0
     margin: 0 auto
+    background-color: #3a3939
     
-    .col-md-6
+    .col 
+        background-color: #3a3939
+    
+        .foto-static
+            background-image: url(../pic/suzan.jpg)              
+            background-size: cover            
+            height: 100vh
+            max-height: 500px        
+    
+    .carousel-title
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center 
+        align-content: center
+        width: 100%      
+        max-height: 500px
+        height: 100vh
+    
+    h1
+        margin-top: 0px        
+
+    .col-md-6        
         padding: 0
         margin: 0
-                
-    .item
-        width: 100%
-        height: 100%
-        padding: 0
-        margin: 0
+        max-height: 500px
+        background-color: #3a3939
         
-    .example-1
-        background-color: red        
-        
-    .example-2
-        background-color: blue
-        
-    .example-3
-        background-color: violet
-    
-    .example-4
-        background-color: green
-        
-        
+        .slider-foto
+            max-width: 100%             
+            max-height: 500px
+            box-sizing: content-box
+                    
+        .item
+            width: 100%      
+            max-height: 500px
+            height: 100vh
+            padding: 0
+            margin: 0
+            color: #d9d9d9
+
+        .example-1            
+            background-color: $slider                           
+
+        .example-2
+            background-color: $slider         
+            
+        .example-3
+            background-color: $slider           
+            
+        .example-4
+            background-color: $slider          
+                    
+.carousel     
+    padding: 0
+    margin: 0    
+
 .ready
-    display: block
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    height: 340px    
+    
+    h2
+        font-size: 28px
+        line-height: 21px
+        color: #2d3033
+        
+    h6
+        font-size: 13px
+        line-height: 21px
+        font-weight: bold
+        text-transform: uppercase    
+        color: #2d3033
+    
+    button
+        margin-top: 20px
+        width: 280px
+        height: 45px
+        color: #ffffff
+        background-color: $button-red
+        text-transform: uppercase 
+        font-size: 13px
+        line-height: 21px
+        
+.contact
+    display: flex
+    flex-direction: column
+    justify-content: center    
+    align-items: center
+    align-content: center
+    background-color: #3a3e64
+    min-height: 250px
+    margin: 0 auto
+    
+    .container
+        margin: 0 auto
+        text-align: center
+        
+        h3
+            color: #ffffff
+            font-size: 14px
+            text-transform: uppercase 
+            font-weight: bold
+            
+        p
+            opacity: 0.5
+            color: #ffffff
+            font-size: 14px
+            line-height: 22.5px
+        
+        i
+            width: 35px
+            height: 35px
+            font-size: 18px
+            color: #c6cacc
+            border: 1px solid #e8ecee
+            padding: 5px
+            text-align: center
+
+            &:hover
+                color: $orange
+                border: 1px solid $orange
+            
+        
+        
+footer
+    display: flex
+    flex-direction: column
+    justify-content: center    
+    align-items: center
+    align-content: center
+    background-color: #313454
+    min-height: 95px
+    margin: 0 auto
+    text-align: center
+    
+    h3
+        margin: 0
+        font-size: 14px
+        line-height: 22.5px
+        color: #808080
+    
