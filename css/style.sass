@@ -2,7 +2,7 @@ $font-quicksand: "Quicksand", sans-serif
 $font-opensans: "Open Sans", sans-serif
 $font-raleway: 'Raleway', sans-serif
 
-$orange: #fec601
+$orange: #ffae00
 $button-red: #e84545
 $slider: #3a3939
 
@@ -25,7 +25,7 @@ header
     background-size: cover
     
     .jumbotron
-        background: rgba(43, 46, 74, 0.95)
+        background: rgba(55, 55, 55, 0.85)
         height: 100%
         margin: 0
         padding: 0            
@@ -87,12 +87,20 @@ header
                 line-height: 30px
 
             button
-                background-color: $button-red
+                background-color: $orange
                 margin-top: 75px
                 width: 200px
                 height: 45px
                 font-size: 13px
                 text-transform: uppercase        
+                border-color: $orange
+                transition: 0.2s
+                
+                &:hover
+                    background-color: #ea9c00
+                    border-color: #ea9c00
+                    transition: 0.2s
+                
 
                 
 .icons
@@ -108,29 +116,30 @@ header
         padding: 0 45px
         margin: 0
 
-    i
-        color: red
-        font-size: 60px             
-        padding-bottom: 10px
+        i
+            color: $orange
+            font-size: 60px             
+            padding-bottom: 10px
 
-    h3
-        font-size: 14px
-        font-weight: bold
-        text-transform: uppercase
-        font-family: $font-raleway 
-        padding-bottom: 10px
+        h3
+            font-size: 14px
+            font-weight: bold
+            text-transform: uppercase
+            font-family: $font-raleway 
+            padding-bottom: 10px
 
-    p
-        font-size: 14px
-        line-height: 21px
-        font-family: $font-raleway
-        color: #6c7279
+        p
+            font-size: 14px
+            line-height: 21px
+            font-family: $font-raleway
+            color: #6c7279
                 
         
 .gallery
     width: 100%
     margin: 0
     padding: 0
+    background-color: #000000
     
     .row
         margin: 0        
@@ -142,6 +151,9 @@ header
             
             img
                 width: 100%
+                border-radius: 0
+                border: none
+                padding: 0
             
             .img-thumbnail
                 padding: 0
@@ -176,7 +188,7 @@ header
                     text-align: center
                     z-index: 10
                 &:hover
-                    background-color: rgba(133, 256, 255, 0.5)
+                    background-color: rgba(44, 44, 44, 0.8)
                     h3, p
                         display: block
 
@@ -192,13 +204,21 @@ header
     align-items: center       
     font-family: $font-raleway 
     
+    .col-md-3 
+        padding: 10px 10px
+        transition: 0.5s
+        
+        &:hover
+            box-shadow: 0px 0px 15px grey
+            transition: 0.5s
+    
     h3        
         font-size: 22px
         color: #2d3033
     
     h6
         font-size: 13px
-        color: #e84545
+        color: $orange
         text-transform: uppercase
         
     p
@@ -232,7 +252,7 @@ header
         background-color: #3a3939
     
         .foto-static
-            background-image: url(../pic/suzan.jpg)              
+            background-image: url(../pic/produkcja.jpg)              
             background-size: cover            
             height: 100vh
             max-height: 500px        
@@ -305,14 +325,20 @@ header
         color: #2d3033
     
     button
+        background-color: $orange
         margin-top: 20px
         width: 280px
         height: 45px
-        color: #ffffff
-        background-color: $button-red
-        text-transform: uppercase 
         font-size: 13px
         line-height: 21px
+        text-transform: uppercase        
+        border-color: $orange
+        transition: 0.2s
+        
+        &:hover
+            background-color: #ea9c00
+            border-color: #ea9c00
+            transition: 0.2s        
         
 .contact
     display: flex
@@ -320,7 +346,7 @@ header
     justify-content: center    
     align-items: center
     align-content: center
-    background-color: #3a3e64
+    background-color: #555454
     min-height: 250px
     margin: 0 auto
     
@@ -361,7 +387,7 @@ footer
     justify-content: center    
     align-items: center
     align-content: center
-    background-color: #313454
+    background-color: #252424
     min-height: 95px
     margin: 0 auto
     text-align: center

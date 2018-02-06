@@ -16,7 +16,7 @@ header {
   background-image: url(../pic/background1.jpg);
   background-size: cover; }
   header .jumbotron {
-    background: rgba(43, 46, 74, 0.95);
+    background: rgba(55, 55, 55, 0.85);
     height: 100%;
     margin: 0;
     padding: 0; }
@@ -67,12 +67,18 @@ header {
         font-size: 22px;
         line-height: 30px; }
       header .welcome .container button {
-        background-color: #e84545;
+        background-color: #ffae00;
         margin-top: 75px;
         width: 200px;
         height: 45px;
         font-size: 13px;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        border-color: #ffae00;
+        transition: 0.2s; }
+        header .welcome .container button:hover {
+          background-color: #ea9c00;
+          border-color: #ea9c00;
+          transition: 0.2s; }
 
 .icons {
   min-height: 690px;
@@ -85,26 +91,27 @@ header {
   .icons .col-md-4 {
     padding: 0 45px;
     margin: 0; }
-  .icons i {
-    color: red;
-    font-size: 60px;
-    padding-bottom: 10px; }
-  .icons h3 {
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: "Raleway", sans-serif;
-    padding-bottom: 10px; }
-  .icons p {
-    font-size: 14px;
-    line-height: 21px;
-    font-family: "Raleway", sans-serif;
-    color: #6c7279; }
+    .icons .col-md-4 i {
+      color: #ffae00;
+      font-size: 60px;
+      padding-bottom: 10px; }
+    .icons .col-md-4 h3 {
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-family: "Raleway", sans-serif;
+      padding-bottom: 10px; }
+    .icons .col-md-4 p {
+      font-size: 14px;
+      line-height: 21px;
+      font-family: "Raleway", sans-serif;
+      color: #6c7279; }
 
 .gallery {
   width: 100%;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background-color: #000000; }
   .gallery .row {
     margin: 0; }
     .gallery .row .gal-0 {
@@ -112,7 +119,10 @@ header {
       border: 0;
       margin: 0; }
       .gallery .row .gal-0 img {
-        width: 100%; }
+        width: 100%;
+        border-radius: 0;
+        border: none;
+        padding: 0; }
       .gallery .row .gal-0 .img-thumbnail {
         padding: 0;
         border: 0;
@@ -142,7 +152,7 @@ header {
           text-align: center;
           z-index: 10; }
         .gallery .row .gal-0 .text-gal:hover {
-          background-color: rgba(133, 255, 255, 0.5); }
+          background-color: rgba(44, 44, 44, 0.8); }
           .gallery .row .gal-0 .text-gal:hover h3, .gallery .row .gal-0 .text-gal:hover p {
             display: block; }
 
@@ -156,12 +166,18 @@ header {
   align-content: center;
   align-items: center;
   font-family: "Raleway", sans-serif; }
+  .team .col-md-3 {
+    padding: 10px 10px;
+    transition: 0.5s; }
+    .team .col-md-3:hover {
+      box-shadow: 0px 0px 15px grey;
+      transition: 0.5s; }
   .team h3 {
     font-size: 22px;
     color: #2d3033; }
   .team h6 {
     font-size: 13px;
-    color: #e84545;
+    color: #ffae00;
     text-transform: uppercase; }
   .team p {
     font-size: 14px;
@@ -176,8 +192,8 @@ header {
     padding: 5px;
     text-align: center; }
     .team i:hover {
-      color: #fec601;
-      border: 1px solid #fec601; }
+      color: #ffae00;
+      border: 1px solid #ffae00; }
 
 .slider {
   display: block;
@@ -188,7 +204,7 @@ header {
   .slider .col {
     background-color: #3a3939; }
     .slider .col .foto-static {
-      background-image: url(../pic/suzan.jpg);
+      background-image: url(../pic/produkcja.jpg);
       background-size: cover;
       height: 100vh;
       max-height: 500px; }
@@ -249,14 +265,19 @@ header {
     text-transform: uppercase;
     color: #2d3033; }
   .ready button {
+    background-color: #ffae00;
     margin-top: 20px;
     width: 280px;
     height: 45px;
-    color: #ffffff;
-    background-color: #e84545;
-    text-transform: uppercase;
     font-size: 13px;
-    line-height: 21px; }
+    line-height: 21px;
+    text-transform: uppercase;
+    border-color: #ffae00;
+    transition: 0.2s; }
+    .ready button:hover {
+      background-color: #ea9c00;
+      border-color: #ea9c00;
+      transition: 0.2s; }
 
 .contact {
   display: flex;
@@ -264,7 +285,7 @@ header {
   justify-content: center;
   align-items: center;
   align-content: center;
-  background-color: #3a3e64;
+  background-color: #555454;
   min-height: 250px;
   margin: 0 auto; }
   .contact .container {
@@ -289,8 +310,8 @@ header {
       padding: 5px;
       text-align: center; }
       .contact .container i:hover {
-        color: #fec601;
-        border: 1px solid #fec601; }
+        color: #ffae00;
+        border: 1px solid #ffae00; }
 
 footer {
   display: flex;
@@ -298,7 +319,7 @@ footer {
   justify-content: center;
   align-items: center;
   align-content: center;
-  background-color: #313454;
+  background-color: #252424;
   min-height: 95px;
   margin: 0 auto;
   text-align: center; }
