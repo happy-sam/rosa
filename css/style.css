@@ -78,7 +78,8 @@ header {
         header .welcome .container button:hover {
           background-color: #ea9c00;
           border-color: #ea9c00;
-          transition: 0.2s; }
+          transition: 0.2s;
+          box-shadow: 0px 0px 10px #ffffff; }
 
 .icons {
   min-height: 690px;
@@ -91,7 +92,7 @@ header {
   .icons .col-md-4 {
     padding: 0 45px;
     margin: 0; }
-    .icons .col-md-4 i {
+    .icons .col-md-4 i, .icons .col-md-4 .fas {
       color: #ffae00;
       font-size: 60px;
       padding-bottom: 10px; }
@@ -273,11 +274,14 @@ header {
     line-height: 21px;
     text-transform: uppercase;
     border-color: #ffae00;
-    transition: 0.2s; }
+    transition: 0.2s;
+    font-weight: bold; }
     .ready button:hover {
       background-color: #ea9c00;
       border-color: #ea9c00;
-      transition: 0.2s; }
+      transition: 0.2s;
+      box-shadow: 0px 0px 10px grey;
+      color: #ffffff; }
 
 .contact {
   display: flex;
