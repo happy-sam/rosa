@@ -61,10 +61,10 @@ header {
       height: 80vh; }
       header .welcome .container h1 {
         font-family: "Open Sans", sans-serif;
-        font-size: 65px;
+        font-size: 3.8vw;
         text-transform: uppercase; }
       header .welcome .container h3 {
-        font-size: 22px;
+        font-size: 1.4vw;
         line-height: 30px; }
       header .welcome .container button {
         background-color: #ffae00;
@@ -297,9 +297,10 @@ header {
     text-align: center; }
     .contact .container h3 {
       color: #ffffff;
-      font-size: 14px;
+      font-size: 1.4vw;
       text-transform: uppercase;
-      font-weight: bold; }
+      font-weight: bold;
+      text-align: center; }
     .contact .container p {
       opacity: 0.5;
       color: #ffffff;
